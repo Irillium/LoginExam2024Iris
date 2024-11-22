@@ -7,7 +7,15 @@
     android:layout_height="match_parent"
     tools:context=".features.user.presentation.MainActivity">
 
-    <include layout="@layout/view_form" />
+    <include layout="@layout/init_fragment"/>
+<androidx.fragment.app.FragmentContainerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nav_host_fragment"
+    android:name="androidx.navigation.fragment.NavHostFragment"
+    app:navGraph="@navigation/nav_graph"
+    >
 
+</androidx.fragment.app.FragmentContainerView>
 
 </FrameLayout>
