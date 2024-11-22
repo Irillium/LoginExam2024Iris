@@ -1,7 +1,8 @@
-package edu.iesam.loginexam1eval
+package edu.iesam.loginexam1eval.features.user.data
 
 import android.content.Context
 import com.google.gson.Gson
+import edu.iesam.loginexam1eval.features.user.domain.User
 
 class LoginXmlLocalDataSource (private val context: Context) {
 
