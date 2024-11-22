@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/initFragment2">
+
+
+    <fragment
+        android:id="@+id/singInFragment2"
+        android:name="edu.iesam.loginexam1eval.features.user.presentation.SingInFragment"
+        android:label="SingInFragment"
+        tools:layout="@layout/singin_franment">
+
+    </fragment>
+    <fragment
+        android:id="@+id/initFragment2"
+        android:name="edu.iesam.loginexam1eval.features.user.presentation.InitFragment"
+        android:label="InitFragment"
+        tools:layout="@layout/init_fragment">
+        <action
+            android:id="@+id/action_initFragment2_to_singInFragment22"
+            app:destination="@id/singInFragment2" />
+    </fragment>
+</navigation>
