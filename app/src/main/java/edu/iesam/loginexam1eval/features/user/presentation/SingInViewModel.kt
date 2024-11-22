@@ -10,7 +10,7 @@ import org.koin.android.annotation.KoinViewModel
 @KoinViewModel
 class SingInViewModel(private val getUserUseCase: GetUserUseCase):ViewModel() {
     private val _uiState=MutableLiveData<UiState>()
-    private val uiState:LiveData<UiState>=_uiState
+    private val uiState:LiveData<UiState> get() = _uiState
 
 
 
